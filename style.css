@@ -1,0 +1,122 @@
+.header{
+    display: flex;
+    background-color: rgb(27, 53, 83);
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: auto;
+}
+.redbox{
+    text-align: center;
+    background-color: white;
+    border: 1.5px solid red;
+    font-family: sans-serif;
+    padding-inline: 20px;
+    padding-top: 5px;
+    height:37px;
+    width: 250px;
+    /* aspect-ratio: 3/1; */
+}
+.newsblog{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.subheader{
+    padding-block: 1%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.line{
+    border: none;
+    height: 1px;
+    color: black;
+    background-color: black;
+}
+.category{
+display: flex;
+flex-direction: column;
+justify-content: center;
+font-family: sans-serif;
+margin-left: 30px;
+}
+
+.allnews{
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: bold;
+font-size: 200%;
+}
+
+.subscribe{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+align-items: start;
+font-family: sans-serif;
+}
+
+.subscribe #subscribebtn{
+    background-color: black;
+    color: white;
+    margin-left:-1px;
+    box-shadow: -3px 0px 0px rgb(90, 89, 89);
+}
+
+.section{
+    display: flex;
+    /* display: grid;
+    grid-template-columns: 2fr 8fr; */
+}
+
+.image{
+    background-image: linear-gradient(90deg,rgba(12, 12, 12, 0.689),rgba(218, 215, 215, 0.913));
+    margin:20px;
+    /* width: 300px;  */
+    height:200px;
+    aspect-ratio: 1/1;
+    margin-right: 40px;
+}
+.subpara{
+    font-family: sans-serif;
+    /* margin-bottom: 30px; */
+    padding: 2px;
+    font-size: 10px;
+}
+
+#readingbtn{
+    background-color: rgb(234, 80, 28); 
+    border: none; 
+    padding: 10px;
+    color: white;
+    box-shadow: 2px -1px 2px rgba(143, 142, 142, 0.6);
+}
+
+@media (max-width: 576px) {
+    .subheader{
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
+    }
+    .category{
+        margin-left:0px;
+    }
+    .image{
+        justify-self: center;
+        /* margin-bottom: 20px; */
+    }
+    .section{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+    .subpara{
+        margin-bottom: 10px;
+    }
+    #readingbtn{
+        margin-bottom: 4px;
+    }
+}
